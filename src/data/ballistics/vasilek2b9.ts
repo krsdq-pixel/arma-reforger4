@@ -1,0 +1,50 @@
+import { WeaponDataset } from '../../types/ballistics';
+
+export const vasilek2b9Mortar: WeaponDataset = {
+  id: '2b9_vasilek',
+  weaponName: '2B9 Vasilek 82mm Gun-Mortar',
+  weaponNameAr: 'هاون 2B9 فاسيليك الأوتوماتيكي عيار 82 ملم',
+  caliber: '82mm',
+  ammoType: '3OF-36 4-Round Magazine HE',
+  dataSource: 'GRAU Index 2B9 Technical Field Manual',
+  sourceDate: '1982',
+  gameVersion: 'Arma Reforger Mod / Vanilla Ballistics',
+  verificationStatus: 'verified',
+  milStandard: 'warsaw_6000',
+  minSafeDistance: 100,
+  maxEffectiveRange: 4570,
+  notes: 'High-rate automatic mortar with Warsaw 6000 mils dial.',
+  charges: [
+    {
+      chargeNumber: 1,
+      name: 'Charge 1 (Short Range Rapid Fire)',
+      minRange: 100,
+      maxRange: 1500,
+      propellantDesc: 'Low pressure rapid salvo.',
+      table: [
+        { range: 100, elevationMils: 1410, tof: 12.0, dElev_per_100m_dAlt: 22 },
+        { range: 300, elevationMils: 1370, tof: 13.5, dElev_per_100m_dAlt: 20 },
+        { range: 600, elevationMils: 1300, tof: 15.6, dElev_per_100m_dAlt: 18 },
+        { range: 900, elevationMils: 1210, tof: 17.8, dElev_per_100m_dAlt: 16 },
+        { range: 1200, elevationMils: 1100, tof: 20.2, dElev_per_100m_dAlt: 14 },
+        { range: 1500, elevationMils: 950, tof: 22.8, dElev_per_100m_dAlt: 12 },
+      ],
+    },
+    {
+      chargeNumber: 2,
+      name: 'Charge 2 (Long Range Suppression)',
+      minRange: 800,
+      maxRange: 4570,
+      propellantDesc: 'Full charge battery suppression.',
+      table: [
+        { range: 800, elevationMils: 1410, tof: 26.0, dElev_per_100m_dAlt: 26 },
+        { range: 1400, elevationMils: 1360, tof: 29.5, dElev_per_100m_dAlt: 24 },
+        { range: 2000, elevationMils: 1290, tof: 33.2, dElev_per_100m_dAlt: 21 },
+        { range: 2600, elevationMils: 1210, tof: 37.0, dElev_per_100m_dAlt: 19 },
+        { range: 3200, elevationMils: 1120, tof: 41.2, dElev_per_100m_dAlt: 16 },
+        { range: 3800, elevationMils: 1010, tof: 45.8, dElev_per_100m_dAlt: 14 },
+        { range: 4570, elevationMils: 850, tof: 51.5, dElev_per_100m_dAlt: 12 },
+      ],
+    },
+  ],
+};

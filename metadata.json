@@ -1,0 +1,8 @@
+{
+  "name": "Arma Reforger Mortar Command Center",
+  "description": "Tactical map, ballistic fire control calculator, coordinate converter, and mortar mission planner for Arma Reforger (Everon, Arland, Kolguyev).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
